@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <h1>Nombre con caracteres mas largos</h1>
+    <form method="POST">
+        <label>Nombre 1: <input type="text" name="nombre1" required></label><br>
+        <label>Nombre 2: <input type="text" name="nombre2" required></label><br>
+        <label>Nombre 3: <input type="text" name="nombre3" required></label><br>
+        <button type="submit">Enviar</button>
+    </form>
+    {% if resultado %}
+        <p>El nombre con mayor caracteres es: {{ resultado.nombre }}</p>
+        <p>El nombre tiene: {{ resultado.longitud }} caracteres</p>
+    {% endif %}
+</body>
+</html>
